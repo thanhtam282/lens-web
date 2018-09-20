@@ -1,0 +1,206 @@
+// .home-nay
+// 	+pad(3rem)
+// .shop
+// 	figure
+// 		padding: 1rem
+// 		height: 100%
+// 		&:hover
+// 			box-shadow: inset 0px 0px 0px 3px red
+// 	// img
+// 	// 	display: flex
+
+
+// mixxin
+
+=center($direct: row)
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	flex-direction: $direct
+
+=bg-img($scr : "../img/home_slider_1.png", $hi: 200px)
+	background-position: center center
+	background-size: cover
+	min-height: $hi
+	position: relative
+	background-image:  url($scr)
+
+.thanhtam-slider
+	.owl-carousel.owl-theme
+		.item
+			a
+				figure
+					padding-bottom: 6.5rem
+					.bg_1
+						+bg-img("../img/home_slider_1.png", 728px)
+					.bg_2
+						+bg-img("../img/home_slider_2.png", 728px)
+					.bg_3
+						+bg-img("../img/home_slider_3.png", 728px)
+
+.thanhtam-product
+	.item
+		figure
+			position: relative
+			//padding-right: 2.07rem
+			margin-bottom: 2rem
+			figcaption
+				position: absolute
+				right: 50%
+				bottom: 1.5rem
+				transform: translateX(50%)
+				button
+					width: auto
+					border-radius: 0
+					background: white
+					font-size: 16px
+					font-weight: bold
+					font-size: 0.71rem
+					box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15)
+					
+					p
+						font-weight: normal
+						margin-bottom: 0
+		&:last-child
+			margin-bottom: 2.21rem
+		&:first-child
+			margin-bottom: .21rem
+	
+				
+	+media-breakpoint-up(md)
+		.item
+			figure
+				figcaption
+					button
+						width: 13rem
+						font-size: 1rem
+			&:last-child
+				margin-bottom: 3rem
+
+	+media-breakpoint-up(lg)
+		.item
+			figure
+				figcaption
+					button
+						width: 18.57rem
+						font-size: 1.14rem
+						&:hover, &:active
+							background: #007bff
+							color: white
+
+						p
+			&:last-child
+				margin-bottom: 5.14rem
+
+.thanhtam-piece
+	background: #f3f4f7
+	h2
+		font-size: 1.5rem
+		margin-top: 1.5rem
+		margin-bottom: 1rem
+	.owl-carousel
+		a
+			color: black
+			figure
+				.master
+					padding: 1rem
+					position: relative
+				.hover
+					position: absolute
+					opacity: 0
+				figcaption
+					margin-top: 1.21rem
+					button
+						opacity: 1
+						background: #3c4d93
+						border: none
+						border-radius: 0
+						color: white
+						width: 10rem
+			&:hover
+				text-decoration: none
+				color: black
+				figure
+					figcaption
+						button
+							background: #3c4d93
+		.owl-nav
+			position: absolute
+			top: 0
+			right: 0
+
+		+media-breakpoint-up(lg)
+			h2
+				font-size: 2rem
+				margin-top: 5.71rem
+				margin-bottom: 2.86rem
+			a
+				figure
+					.master
+					.hover
+						// left 15px
+						padding: 1rem
+						//opacity: 1
+						top: 0
+						transition: .5s all ease-in-out
+					figcaption
+						margin-top: 2.21rem
+						button
+							transition: .5s all ease-in-out
+							opacity: 0
+							width: 12.86rem
+					&:hover
+						.hover
+							opacity: 1
+						figcaption
+							button
+								opacity: 1
+
+.thanhtam-open
+	figure
+		position: relative
+		figcaption
+			button
+				position: absolute
+				bottom: 2rem
+				left: 17rem
+				background: #000
+				color: #efd6c0
+				border-radius: 0
+				width: 8.5rem
+
+.thanhtam-seller
+	.owl-carousel.owl-theme
+		.item
+			.bigimg
+				+center()
+				img
+					margin-left: 3rem
+			.biglens
+				//+center(column)
+				img
+					width: 100%
+					padding: 0 3rem 
+				p
+					font-size: .6rem
+				button
+					font-size: .8rem
+		.owl-nav
+			.owl-prev, .owl-next
+				position: absolute
+				left: 0
+				top: 50%
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				border-radius: 50%
+				background: #afafaf
+				color: white
+				width: 1rem
+				height: 1rem
+			.owl-next
+				position: absolute
+				right:  0
+				left: auto
+				top: 50%

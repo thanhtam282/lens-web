@@ -1,0 +1,33 @@
+header
+	.navbar
+		+pad(null 0)
+	.navbar-brand
+		img
+			max-height: 2rem
+	#fullStackMenu
+		ul
+			li
+				a
+					font-size: 1.14rem
+					color: #000
+					transition: .3s all ease-in-out
+
+	+media-breakpoint-down(sm)
+		#fullStackMenu
+			ul
+				li
+					border-bottom: 2px solid black
+					a
+	+media-breakpoint-up(lg)
+		.navbar-brand
+			img
+				max-height: 3rem
+		#fullStackMenu
+			ul
+				li
+					a
+						&:hover,
+						&:active
+							background: $ngoc
+							color: #fff
+

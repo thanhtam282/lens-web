@@ -1,0 +1,203 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.thanhtam-slider
+		.owl-carousel.owl-theme
+			.item
+				a(href="#")
+					figure
+						.bg_1
+						
+			.item
+				a(href="#")
+					figure
+						.bg_2
+			.item
+				a(href="#")
+					figure
+						.bg_3
+
+	section.thanhtam-product
+		.container
+			.row
+				.col-md-8.item
+					a(href="#")
+						figure
+							img.img-fluid(src="./img/home_banner_1.png", alt="")
+				.col-6.col-md-4.item
+					figure
+						img.img-fluid(src="./img/home_product_1.png", alt="")
+						figcaption
+							a(href="#")
+								button.btn Ice Cream - Maple Brown
+									p
+										price 360,000 VNĐ
+				.col-6.col-md-4.item
+					figure
+						img.img-fluid(src="./img/home_product_2.png", alt="")
+						figcaption
+							a(href="#")
+								button.btn Moisture - Shinny Green
+									p
+										price 360,000 VNĐ
+				.col-6.col-md-4.item
+					figure
+						img.img-fluid(src="./img/home_product_3.png", alt="")
+						figcaption
+							a(href="#")
+								button.btn Moisture - Bubble Gray
+									p
+										price 360,000 VNĐ
+				.col-6.col-md-4.item
+					figure
+						img.img-fluid(src="./img/home_product_4.png", alt="")
+						figcaption
+							a(href="#")
+								button.btn Stylish - Flower Gray
+									p
+										price 360,000 VNĐ
+
+	section.thanhtam-piece
+		.container
+			.row
+				.col.text-center
+					h2 TOP PIECES ON SALE
+			.row.mb-5
+				.owl-carousel.owl-theme
+					.item.text-center
+						a(href="#")
+							figure
+								img.img-fluid.master(src="./img/home_piece_1.png", alt="")
+								img.img-fluid.hover(src="./img/home_piece_hover.png", alt="")
+								figcaption
+									p Ice cream - Sweety Brown
+										br
+										price 650,000 VNĐ
+									button.btn CONTACT
+					.item.text-center
+						a(href="#")
+							figure
+								img.img-fluid.master(src="./img/home_piece_3.png", alt="")
+								img.img-fluid.hover(src="./img/home_piece_hover.png", alt="")
+								figcaption
+									p Ice cream - Sweety Brown
+										br
+										price 650,000 VNĐ
+									button.btn CONTACT
+					.item.text-center
+						a(href="#")
+							figure
+								img.img-fluid.master(src="./img/home_piece_3.png", alt="")
+								img.img-fluid.hover(src="./img/home_piece_hover.png", alt="")
+								figcaption
+									p Ice cream - Sweety Brown
+										br
+										price 650,000 VNĐ
+									button.btn CONTACT
+					.item.text-center
+						a(href="#")
+							figure
+								img.img-fluid.master(src="./img/home_piece_4.png", alt="")
+								img.img-fluid.hover(src="./img/home_piece_hover.png", alt="")
+								figcaption
+									p Ice cream - Sweety Brown
+										br
+										price 650,000 VNĐ
+									button.btn CONTACT
+					.item.text-center
+						a(href="#")
+							figure
+								img.img-fluid.master(src="./img/home_piece_3.png", alt="")
+								img.img-fluid.hover(src="./img/home_piece_hover.png", alt="")
+								figcaption
+									p Ice cream - Sweety Brown
+										br
+										price 650,000 VNĐ
+									button.btn CONTACT
+					.item.text-center
+						a(href="#")
+							figure
+								img.img-fluid.master(src="./img/home_piece_3.png", alt="")
+								img.img-fluid.hover(src="./img/home_piece_hover.png", alt="")
+								figcaption
+									p Ice cream - Sweety Brown
+										br
+										price 650,000 VNĐ
+									button.btn CONTACT
+					.item.text-center
+						a(href="#")
+							figure
+								img.img-fluid.master(src="./img/home_piece_4.png", alt="")
+								img.img-fluid.hover(src="./img/home_piece_hover.png", alt="")
+								figcaption
+									p Ice cream - Sweety Brown
+										br
+										price 650,000 VNĐ
+									button.btn CONTACT
+
+	section.thanhtam-open
+		.container
+			.row
+				.col
+					figure
+						img.img-fluid(src="./img/home_banner_2.png", alt="")
+						figcaption
+							button.btn VIEW MORE
+
+	section.thanhtam-seller
+		.container
+			.owl-carousel.owl-theme
+				.item
+					.row.position-relative
+						.col-6.bigimg
+							figure
+								img.img-fluid(src="./img/home_big_product.png", alt="")
+						.col-6.d-flex.align-items-center.justify-content-center.text-center
+							figure.biglens
+								img.img-fluid(src="./img/home_big_lens.png", alt="")
+								p Ice cream - Sweety Gray
+									br
+									price 750,000 VNĐ
+								button.btn VIEW MORE
+				.item
+					.row.position-relative
+						.col-6.bigimg
+							figure
+								img.img-fluid(src="./img/home_big_product.png", alt="")
+						.col-6.d-flex.align-items-center.justify-content-center.text-center
+							figure.biglens
+								img.img-fluid(src="./img/home_big_lens.png", alt="")
+								p Ice cream - Sweety Gray
+									br
+									price 750,000 VNĐ
+								button.btn VIEW MORE
+				.item
+					.row.position-relative
+						.col-6.bigimg
+							figure
+								img.img-fluid(src="./img/home_big_product.png", alt="")
+						.col-6.d-flex.align-items-center.justify-content-center.text-center
+							figure.biglens
+								img.img-fluid(src="./img/home_big_lens.png", alt="")
+								p Ice cream - Sweety Gray
+									br
+									price 750,000 VNĐ
+								button.btn VIEW MORE
+								
+
+
+	section.thanhtam-review
+		.container
+			.row
+				.col
+					figure
+						img.img-fluid(src="./img/home_banner_3.png", alt="")
+
+
+
+
