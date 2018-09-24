@@ -6550,10 +6550,14 @@ footer .home-form {
         background: #3c4d93; }
   .thanhtam-piece .owl-carousel .owl-nav {
     position: absolute;
-    top: 0;
-    right: 0; }
+    top: -3.7rem;
+    right: 1rem;
+    color: #424e97; }
+    .thanhtam-piece .owl-carousel .owl-nav button:hover, .thanhtam-piece .owl-carousel .owl-nav button:active {
+      color: #424e97;
+      background: none; }
   @media (min-width: 992px) {
-    .thanhtam-piece .owl-carousel h2 {
+    .thanhtam-piece h2 {
       font-size: 2rem;
       margin-top: 5.71rem;
       margin-bottom: 2.86rem; }
@@ -6570,18 +6574,28 @@ footer .home-form {
     .thanhtam-piece .owl-carousel a figure:hover .hover {
       opacity: 1; }
     .thanhtam-piece .owl-carousel a figure:hover figcaption button {
-      opacity: 1; } }
+      opacity: 1; }
+    .thanhtam-piece .owl-carousel .owl-nav {
+      top: -6.1rem;
+      font-size: 1.5rem;
+      color: #afafaf; }
+      .thanhtam-piece .owl-carousel .owl-nav button:hover, .thanhtam-piece .owl-carousel .owl-nav button:active {
+        color: #424e97;
+        background: none; } }
 
 .thanhtam-open figure {
   position: relative; }
-  .thanhtam-open figure figcaption button {
-    position: absolute;
-    bottom: 2rem;
-    left: 17rem;
-    background: #000;
-    color: #efd6c0;
-    border-radius: 0;
-    width: 8.5rem; }
+  .thanhtam-open figure figcaption a {
+    text-decoration: none; }
+    .thanhtam-open figure figcaption a button {
+      position: absolute;
+      bottom: .5rem;
+      left: 5rem;
+      font-size: .5rem;
+      background: #000;
+      color: #efd6c0;
+      border-radius: 0;
+      padding: 0rem 0.5rem; }
 
 .thanhtam-seller .owl-carousel.owl-theme .item .bigimg {
   display: flex;
@@ -6613,7 +6627,8 @@ footer .home-form {
   background: #afafaf;
   color: white;
   width: 1rem;
-  height: 1rem; }
+  height: 1rem;
+  font-size: .5rem; }
 
 .thanhtam-seller .owl-carousel.owl-theme .owl-nav .owl-next {
   position: absolute;
